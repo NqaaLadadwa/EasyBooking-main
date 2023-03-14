@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotelina - Luxury Hotel and Suits Booking HTML Template</title>
+        <link rel="icon" href="assets/images/bg/sm-logo.png" type="image/gif" sizes="20x20">
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- box-icon -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+    <!-- jquery ui -->
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
+    <!-- swiper-slide -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- slick-slide -->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!-- select 2 -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- odometer css -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<!-- start preloader area -->
+    <div class="egns-preloader">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                    <div class="circle-border">
+                        <div class="moving-circle"></div>
+                        <div class="moving-circle"></div>
+                        <div class="moving-circle"></div>
+                        <svg width="180px" height="150px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet"
+                            style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);">
+                            <path stroke="#D90A2C" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                            <path id="outline-bg" opacity="0.05" fill="none" stroke="#959595" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End preloader area  -->
+
+
+    <!-- ========== Top Bar start============= -->
+    <div class="top-bar2">
+        <div class="container-lg container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top-bar-items">
+                        <div class="hotline">
+                            <div class="hotline-icon">
+                                <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.5488 16.106C20.0165 15.5518 19.3745 15.2554 18.694 15.2554C18.0191 15.2554 17.3716 15.5463 16.8173 16.1005L15.0833 17.8291C14.9406 17.7522 14.7979 17.6809 14.6608 17.6096C14.4632 17.5108 14.2766 17.4175 14.1175 17.3187C12.4932 16.2871 11.0171 14.9426 9.6013 13.2031C8.91536 12.3361 8.45441 11.6063 8.11968 10.8655C8.56965 10.4539 8.9867 10.0259 9.39277 9.61431C9.54642 9.46066 9.70007 9.30152 9.85372 9.14787C11.0061 7.9955 11.0061 6.50291 9.85372 5.35054L8.35564 3.85246C8.18553 3.68234 8.00993 3.50674 7.8453 3.33115C7.51606 2.99092 7.17034 2.63972 6.81366 2.31047C6.28137 1.78368 5.64483 1.50381 4.97535 1.50381C4.30588 1.50381 3.65836 1.78368 3.10961 2.31047C3.10412 2.31596 3.10412 2.31596 3.09864 2.32145L1.23289 4.20365C0.530497 4.90605 0.129911 5.7621 0.0421114 6.75533C-0.089588 8.35768 0.382335 9.85027 0.744508 10.827C1.63348 13.2251 2.96145 15.4475 4.94243 17.8291C7.34594 20.699 10.2378 22.9653 13.5413 24.5622C14.8034 25.1603 16.4881 25.8682 18.3703 25.9889C18.4855 25.9944 18.6062 25.9999 18.716 25.9999C19.9836 25.9999 21.0482 25.5445 21.8823 24.639C21.8878 24.628 21.8987 24.6226 21.9042 24.6116C22.1896 24.2659 22.5188 23.9531 22.8645 23.6184C23.1005 23.3934 23.3419 23.1574 23.5779 22.9105C24.1212 22.3453 24.4065 21.6868 24.4065 21.0118C24.4065 20.3314 24.1157 19.6783 23.5614 19.1296L20.5488 16.106ZM22.5133 21.8843C22.5078 21.8843 22.5078 21.8898 22.5133 21.8843C22.2993 22.1148 22.0798 22.3233 21.8439 22.5538C21.4872 22.894 21.125 23.2507 20.7848 23.6513C20.2305 24.2439 19.5775 24.5238 18.7215 24.5238C18.6392 24.5238 18.5514 24.5238 18.4691 24.5183C16.8393 24.414 15.3247 23.7775 14.1888 23.2342C11.0829 21.7307 8.35564 19.596 6.08931 16.8907C4.21808 14.6354 2.96694 12.5501 2.13833 10.3112C1.62799 8.94484 1.44142 7.88026 1.52373 6.87606C1.57861 6.23402 1.82554 5.70174 2.281 5.24628L4.15223 3.37504C4.42112 3.12262 4.70647 2.98543 4.98633 2.98543C5.33204 2.98543 5.6119 3.19396 5.7875 3.36956C5.79299 3.37504 5.79847 3.38053 5.80396 3.38602C6.1387 3.69881 6.45697 4.02257 6.79171 4.36828C6.96182 4.54388 7.13742 4.71948 7.31302 4.90056L8.8111 6.39865C9.39277 6.98032 9.39277 7.51809 8.8111 8.09976C8.65196 8.2589 8.49831 8.41804 8.33918 8.57169C7.87823 9.04361 7.43923 9.48261 6.96182 9.91063C6.95085 9.92161 6.93987 9.92709 6.93438 9.93807C6.46246 10.41 6.55026 10.8709 6.64903 11.1837C6.65452 11.2002 6.66001 11.2167 6.6655 11.2331C7.05511 12.177 7.60385 13.0659 8.43795 14.125L8.44344 14.1305C9.95798 15.9962 11.5548 17.4504 13.3163 18.5644C13.5413 18.7071 13.7718 18.8223 13.9913 18.932C14.1888 19.0308 14.3754 19.1241 14.5345 19.2229C14.5565 19.2339 14.5784 19.2503 14.6004 19.2613C14.787 19.3546 14.9626 19.3985 15.1436 19.3985C15.5991 19.3985 15.8845 19.1131 15.9777 19.0198L17.8545 17.1431C18.041 16.9566 18.3374 16.7316 18.6831 16.7316C19.0233 16.7316 19.3032 16.9456 19.4733 17.1322C19.4788 17.1376 19.4788 17.1376 19.4842 17.1431L22.5078 20.1667C23.0731 20.7265 23.0731 21.3026 22.5133 21.8843Z" />
+                                    <path
+                                        d="M14.0512 6.18495C15.4889 6.4264 16.7949 7.10685 17.8375 8.14947C18.8802 9.19209 19.5551 10.4981 19.8021 11.9358C19.8624 12.298 20.1752 12.5504 20.5319 12.5504C20.5758 12.5504 20.6142 12.5449 20.6581 12.5395C21.0642 12.4736 21.3331 12.0895 21.2672 11.6834C20.9709 9.94387 20.1478 8.35799 18.8911 7.10136C17.6345 5.84473 16.0486 5.0216 14.3091 4.72528C13.903 4.65943 13.5244 4.92832 13.4531 5.3289C13.3817 5.72949 13.6451 6.1191 14.0512 6.18495Z" />
+                                    <path
+                                        d="M25.9707 11.4691C25.4823 8.60468 24.1324 5.99813 22.0581 3.92387C19.9838 1.8496 17.3773 0.49968 14.5128 0.011294C14.1122 -0.0600432 13.7336 0.214331 13.6623 0.614917C13.5964 1.02099 13.8653 1.39963 14.2714 1.47096C16.8285 1.90447 19.1607 3.11721 21.0155 4.96649C22.8702 6.82125 24.0775 9.15343 24.511 11.7106C24.5714 12.0728 24.8841 12.3252 25.2408 12.3252C25.2847 12.3252 25.3231 12.3197 25.367 12.3142C25.7676 12.2539 26.042 11.8697 25.9707 11.4691Z" />
+                                </svg>
+                            </div>
+                            <div class="hotline-info">
+                                <span>Call Us Now</span>
+                                <h6><a href="tel:+8801701111000">+880 170 1111 000</a></h6>
+                            </div>
+                        </div>
+                        <div class="top-bar-icon">
+                            <a href="index.html"><img src="assets/images/header-logo2.svg" alt=""></a>
+                        </div>
+                        <div class="email d-flex align-items-center">
+                            <div class="email-icon">
+                                <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_461_205)">
+                                        <path
+                                            d="M23.5117 3.30075H2.38674C1.04261 3.30075 -0.0507812 4.39414 -0.0507812 5.73827V20.3633C-0.0507812 21.7074 1.04261 22.8008 2.38674 22.8008H23.5117C24.8558 22.8008 25.9492 21.7074 25.9492 20.3633V5.73827C25.9492 4.39414 24.8558 3.30075 23.5117 3.30075ZM23.5117 4.92574C23.6221 4.92574 23.7271 4.94865 23.8231 4.98865L12.9492 14.4131L2.07526 4.98865C2.17127 4.9487 2.27629 4.92574 2.38668 4.92574H23.5117ZM23.5117 21.1757H2.38674C1.93844 21.1757 1.57421 20.8116 1.57421 20.3632V6.70547L12.4168 16.1024C12.57 16.2349 12.7596 16.3008 12.9492 16.3008C13.1388 16.3008 13.3285 16.2349 13.4816 16.1024L24.3242 6.70547V20.3633C24.3242 20.8116 23.96 21.1757 23.5117 21.1757Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="email-info">
+                                <span>Email Now</span>
+                                <h6><a href="mailto:example@gmail.com">example@gmail.com</a></h6>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Top Bar End============= -->
+    <!-- ========== header start============= -->
+    <header class="header-area style-2">
+        <div class="container-lg container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <div class="header-logo">
+                        <a href="index.html"><img alt="image" src="assets/images/header-logo2.svg" ></a>
+                    </div>
+                    
+                    <div class="main-menu">
+                        <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
+                            <div class="mobile-logo-wrap ">
+                                <a href="index.html"><img alt="image" src="assets/images/header-logo2.svg" ></a>
+            
+                            </div>
+                            <div class="menu-close-btn">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item-has-children">
+                                <a href="#" class="drop-down">Home</a><i class='bx bx-plus dropdown-icon'></i>
+                                <ul class="submenu">
+                                    <li><a href="index.html">Home 01</a></li>
+                                    <li><a href="index2.html">Home 02</a></li>
+                                    <li><a href="index3.html">Home 03</a></li>
+                                    <li><a href="index4.html">Home 04</a></li>
+                                    <li><a href="index5.html">Home 05</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Suites</a><i class='bx bx-plus dropdown-icon'></i>
+                                <ul class="submenu">
+                                    <li><a href="room-suits1.html">Room & Suits 01</a></li>
+                                    <li><a href="room-suits2.html">Room & Suits 02</a></li>
+                                    <li><a href="room-suits-details.html">Room & Suits Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#" class="drop-down">Pages</a><i class='bx bx-plus dropdown-icon'></i>
+                                <ul class="submenu">
+                                    <li><a href="hotel-facilities.html">Hotel Facilities</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="faq.html">Faq</a></li> 
+                                    <li><a href="404.html">Error</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Blog</a><i class='bx bx-plus dropdown-icon'></i>
+                                <ul class="submenu">
+                                    <li><a href="blog.html">Blog Grid</a></li>
+                                    <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
+                                    <li><a href="blog-standard.html">Blog Standard</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <!-- mobile-search-area -->
+                        <div class="d-lg-none d-block">
+                            <form class="mobile-menu-form">
+                                <div class="hotline pt-50">
+                                    <div class="hotline-icon">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20.5488 16.106C20.0165 15.5518 19.3745 15.2554 18.694 15.2554C18.0191 15.2554 17.3716 15.5463 16.8173 16.1005L15.0833 17.8291C14.9406 17.7522 14.7979 17.6809 14.6608 17.6096C14.4632 17.5108 14.2766 17.4175 14.1175 17.3187C12.4932 16.2871 11.0171 14.9426 9.6013 13.2031C8.91536 12.3361 8.45441 11.6063 8.11968 10.8655C8.56965 10.4539 8.9867 10.0259 9.39277 9.61431C9.54642 9.46066 9.70007 9.30152 9.85372 9.14787C11.0061 7.9955 11.0061 6.50291 9.85372 5.35054L8.35564 3.85246C8.18553 3.68234 8.00993 3.50674 7.8453 3.33115C7.51606 2.99092 7.17034 2.63972 6.81366 2.31047C6.28137 1.78368 5.64483 1.50381 4.97535 1.50381C4.30588 1.50381 3.65836 1.78368 3.10961 2.31047C3.10412 2.31596 3.10412 2.31596 3.09864 2.32145L1.23289 4.20365C0.530497 4.90605 0.129911 5.7621 0.0421114 6.75533C-0.089588 8.35768 0.382335 9.85027 0.744508 10.827C1.63348 13.2251 2.96145 15.4475 4.94243 17.8291C7.34594 20.699 10.2378 22.9653 13.5413 24.5622C14.8034 25.1603 16.4881 25.8682 18.3703 25.9889C18.4855 25.9944 18.6062 25.9999 18.716 25.9999C19.9836 25.9999 21.0482 25.5445 21.8823 24.639C21.8878 24.628 21.8987 24.6226 21.9042 24.6116C22.1896 24.2659 22.5188 23.9531 22.8645 23.6184C23.1005 23.3934 23.3419 23.1574 23.5779 22.9105C24.1212 22.3453 24.4065 21.6868 24.4065 21.0118C24.4065 20.3314 24.1157 19.6783 23.5614 19.1296L20.5488 16.106ZM22.5133 21.8843C22.5078 21.8843 22.5078 21.8898 22.5133 21.8843C22.2993 22.1148 22.0798 22.3233 21.8439 22.5538C21.4872 22.894 21.125 23.2507 20.7848 23.6513C20.2305 24.2439 19.5775 24.5238 18.7215 24.5238C18.6392 24.5238 18.5514 24.5238 18.4691 24.5183C16.8393 24.414 15.3247 23.7775 14.1888 23.2342C11.0829 21.7307 8.35564 19.596 6.08931 16.8907C4.21808 14.6354 2.96694 12.5501 2.13833 10.3112C1.62799 8.94484 1.44142 7.88026 1.52373 6.87606C1.57861 6.23402 1.82554 5.70174 2.281 5.24628L4.15223 3.37504C4.42112 3.12262 4.70647 2.98543 4.98633 2.98543C5.33204 2.98543 5.6119 3.19396 5.7875 3.36956C5.79299 3.37504 5.79847 3.38053 5.80396 3.38602C6.1387 3.69881 6.45697 4.02257 6.79171 4.36828C6.96182 4.54388 7.13742 4.71948 7.31302 4.90056L8.8111 6.39865C9.39277 6.98032 9.39277 7.51809 8.8111 8.09976C8.65196 8.2589 8.49831 8.41804 8.33918 8.57169C7.87823 9.04361 7.43923 9.48261 6.96182 9.91063C6.95085 9.92161 6.93987 9.92709 6.93438 9.93807C6.46246 10.41 6.55026 10.8709 6.64903 11.1837C6.65452 11.2002 6.66001 11.2167 6.6655 11.2331C7.05511 12.177 7.60385 13.0659 8.43795 14.125L8.44344 14.1305C9.95798 15.9962 11.5548 17.4504 13.3163 18.5644C13.5413 18.7071 13.7718 18.8223 13.9913 18.932C14.1888 19.0308 14.3754 19.1241 14.5345 19.2229C14.5565 19.2339 14.5784 19.2503 14.6004 19.2613C14.787 19.3546 14.9626 19.3985 15.1436 19.3985C15.5991 19.3985 15.8845 19.1131 15.9777 19.0198L17.8545 17.1431C18.041 16.9566 18.3374 16.7316 18.6831 16.7316C19.0233 16.7316 19.3032 16.9456 19.4733 17.1322C19.4788 17.1376 19.4788 17.1376 19.4842 17.1431L22.5078 20.1667C23.0731 20.7265 23.0731 21.3026 22.5133 21.8843Z" />
+                                            <path
+                                                d="M14.0512 6.18495C15.4889 6.4264 16.7949 7.10685 17.8375 8.14947C18.8802 9.19209 19.5551 10.4981 19.8021 11.9358C19.8624 12.298 20.1752 12.5504 20.5319 12.5504C20.5758 12.5504 20.6142 12.5449 20.6581 12.5395C21.0642 12.4736 21.3331 12.0895 21.2672 11.6834C20.9709 9.94387 20.1478 8.35799 18.8911 7.10136C17.6345 5.84473 16.0486 5.0216 14.3091 4.72528C13.903 4.65943 13.5244 4.92832 13.4531 5.3289C13.3817 5.72949 13.6451 6.1191 14.0512 6.18495Z" />
+                                            <path
+                                                d="M25.9707 11.4691C25.4823 8.60468 24.1324 5.99813 22.0581 3.92387C19.9838 1.8496 17.3773 0.49968 14.5128 0.011294C14.1122 -0.0600432 13.7336 0.214331 13.6623 0.614917C13.5964 1.02099 13.8653 1.39963 14.2714 1.47096C16.8285 1.90447 19.1607 3.11721 21.0155 4.96649C22.8702 6.82125 24.0775 9.15343 24.511 11.7106C24.5714 12.0728 24.8841 12.3252 25.2408 12.3252C25.2847 12.3252 25.3231 12.3197 25.367 12.3142C25.7676 12.2539 26.042 11.8697 25.9707 11.4691Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hotline-info">
+                                        <span>Call Us Now</span>
+                                        <h6><a href="tel:+8801701111000">+880 170 1111 000</a></h6>
+                                    </div>
+                                </div>
+                                <div class="email pt-20 d-flex align-items-center">
+                                    <div class="email-icon">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_461_205)">
+                                                <path
+                                                    d="M23.5117 3.30075H2.38674C1.04261 3.30075 -0.0507812 4.39414 -0.0507812 5.73827V20.3633C-0.0507812 21.7074 1.04261 22.8008 2.38674 22.8008H23.5117C24.8558 22.8008 25.9492 21.7074 25.9492 20.3633V5.73827C25.9492 4.39414 24.8558 3.30075 23.5117 3.30075ZM23.5117 4.92574C23.6221 4.92574 23.7271 4.94865 23.8231 4.98865L12.9492 14.4131L2.07526 4.98865C2.17127 4.9487 2.27629 4.92574 2.38668 4.92574H23.5117ZM23.5117 21.1757H2.38674C1.93844 21.1757 1.57421 20.8116 1.57421 20.3632V6.70547L12.4168 16.1024C12.57 16.2349 12.7596 16.3008 12.9492 16.3008C13.1388 16.3008 13.3285 16.2349 13.4816 16.1024L24.3242 6.70547V20.3633C24.3242 20.8116 23.96 21.1757 23.5117 21.1757Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="email-info">
+                                        <span>Email Now</span>
+                                        <h6><a href="mailto:example@gmail.com">example@gmail.com</a></h6>
+                                    </div>
+                                </div>
+                            </form>
+            
+                        </div>
+                    </div>
+                    <div class="nav-right d-flex align-items-center">
+                        <div class="bookmark-icon">
+                            <a href="#"><i class="bi bi-bookmark"></i></a>
+                            <div class="batch">
+                                <a href="#">02</a>
+                            </div>
+                        </div>
+                        <div class="header-btn">
+                            <a class="btn--primary eg-btn" href="room-suits1.html">Book Now</a>
+                        </div>
+                        <div class="mobile-menu-btn d-lg-none d-block">
+                            <i class="bx bx-menu"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== header end============= -->
+    <!-- ========== Breadcumb start============= -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="breadcrumb-title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">Blog Standard</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb d-flex justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog Standard</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Breadcumb end============= -->
+    <!-- ========== Blog Grid Page start============= -->
+    <div class="inner-blog pt-120 mb-120">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-12">
+                            <div class="blog-wrrap">
+                                <div class="blog-img">
+                                    <img src="assets/images/blog/blog-std1.png" alt="">
+                                    <div class="batch">
+                                        <a href="blog.html">July 19,, 2022</a>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html">By, Admin -</a> <a href="blog.html">Hotel</a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4><a href="blog-details.html">ullamcorper sapien sed ton efficitur enim.</a></h4>
+                                    </div>
+                                    <p class="pera">Hotel ut nisl quam nestibulum ac quam nec odio elementum oneni sci the aucan thoseni ligulatol. Orci varius natoque penatibus ethemen magnis disc parturient monte nascete ridiculusun musclineorto
+                                        <a href="blog-details.html">
+                                            Read More
+                                       </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="blog-wrrap">
+                                <div class="blog-img">
+                                    <img src="assets/images/blog/blog-std2.png" alt="">
+                                    <div class="batch">
+                                        <a href="blog.html">July 14,, 2022</a>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html">By, Admin -</a> <a href="blog.html">Delux</a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4><a href="blog-details.html">Aenean quis nisl pretiuman nibh accumsan.</a></h4>
+                                    </div>
+                                    <p class="pera">Hotel ut nisl quam nestibulum ac quam nec odio elementum oneni sci the aucan thoseni ligulatol. Orci varius natoque penatibus ethemen magnis disc parturient monte nascete ridiculusun musclineorto
+                                        <a href="blog-details.html">
+                                            Read More
+                                       </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="blog-wrrap">
+                                <div class="blog-img">
+                                    <img src="assets/images/blog/blog-std3.png" alt="">
+                                    <div class="batch">
+                                        <a href="blog.html">July 13,, 2022</a>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html">By, Admin -</a> <a href="blog.html">Luxury</a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4><a href="blog-details.html">veryes  elementum sesuren then aucan vestibu.</a></h4>
+                                    </div>
+                                    <p class="pera">Hotel ut nisl quam nestibulum ac quam nec odio elementum oneni sci the aucan thoseni ligulatol. Orci varius natoque penatibus ethemen magnis disc parturient monte nascete ridiculusun musclineorto
+                                        <a href="blog-details.html">
+                                            Read More
+                                       </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">01</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget-area">
+                        <div class="single-widgets widget_search">
+                            <form>
+                                <label>Search</label>
+                                <div class="wp-block-search__inside-wrapper ">
+                                    <input type="search" id="wp-block-search__input-1" class="wp-block-search__input " name="s" value="" placeholder="Search Here" required="">
+                                    <button type="submit" class="wp-block-search__button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.10227 0.0713005C1.983 0.760967 -1.22002 5.91264 0.44166 10.7773C1.13596 12.8 2.60323 14.471 4.55652 15.4476C6.38483 16.3595 8.59269 16.5354 10.5737 15.9151C11.4023 15.6559 12.6011 15.0218 13.2121 14.5126L13.3509 14.3969L16.1281 17.1695C19.1413 20.1735 18.9932 20.0531 19.4237 19.9698C19.6505 19.9281 19.9282 19.6504 19.9699 19.4236C20.0532 18.9932 20.1735 19.1413 17.1695 16.128L14.397 13.3509L14.5127 13.212C14.7858 12.8834 15.2394 12.152 15.4755 11.6614C17.0029 8.48153 16.3271 4.74159 13.7814 2.28379C11.9994 0.561935 9.52304 -0.257332 7.10227 0.0713005ZM9.38418 1.59412C11.0135 1.9135 12.4669 2.82534 13.4666 4.15376C14.0591 4.94062 14.4572 5.82469 14.6793 6.83836C14.8136 7.44471 14.8228 8.75925 14.7025 9.34708C14.3507 11.055 13.4713 12.4622 12.1336 13.4666C11.3467 14.059 10.4627 14.4571 9.44898 14.6793C8.80097 14.8228 7.48644 14.8228 6.83843 14.6793C4.78332 14.2303 3.0985 12.9389 2.20054 11.1337C1.75156 10.2312 1.54328 9.43503 1.49699 8.4445C1.36276 5.62566 3.01055 3.05677 5.6535 1.96904C6.10248 1.7839 6.8014 1.59412 7.28741 1.52932C7.74102 1.46452 8.92595 1.50155 9.38418 1.59412Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="single-widgets widget_egns_recent_post">
+                            <div class="widget-title">
+                                <h3>Newest Posts</h3>
+                            </div>
+                                                       <div class="recent-post-wraper">
+                                <div class="widget-cnt">
+                                    <div class="wi">
+                                        <a href="#"><img src="assets/images/blog/blog-sidebar-1.png" alt=""></a>
+                                    </div>
+                                    <div class="wc">
+                                       <span>July 18, 2022</span>
+                                       <h6><a href="#">Quisque laoreet Maecento facilisis tristique.</a></h6>
+                                    </div>
+                                </div>
+                                <div class="widget-cnt">
+                                    <div class="wi">
+                                        <a href="blog-details.html"><img src="assets/images/blog/blog-sidebar-2.png" alt=""></a>
+                                    </div>
+                                    <div class="wc">
+                                       <span>July 15, 2022</span>
+                                       <h6><a href="blog-details.html">Etiam vel diam volutpatha pellentesque.</a></h6>
+                                    </div>
+                                </div>
+                                <div class="widget-cnt">
+                                    <div class="wi">
+                                        <a href="blog-details.html"><img src="assets/images/blog/blog-sidebar-3.png" alt=""></a>
+                                    </div>
+                                    <div class="wc">
+                                       <span>July 14, 2022</span>
+                                       <h6><a href="blog-details.html">Nunc finibus gravidato on porta. Nulla vitae.</a></h6>
+                                    </div>
+                                </div>
+                                <div class="widget-cnt">
+                                    <div class="wi">
+                                        <a href="blog-details.html"><img src="assets/images/blog/blog-sidebar-4.png" alt=""></a>
+                                    </div>
+                                    <div class="wc">
+                                       <span>July 11, 2022</span>
+                                       <h6><a href="blog-details.html">Nunc finibus gravidato on porta. Nulla vitae.</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-widgets widget_egns_tag">
+                            <div class="widget-title">
+                                <h3>All Tag</h3>
+                            </div>
+                            <p class="wp-block-tag-cloud">
+                                <a href="blog-details.html">Hotel</a>
+                                <a href="blog-details.html">Resort</a>
+                                <a href="blog-details.html">Cortexa</a>
+                                <a href="blog-details.html">Family Room</a>
+                                <a href="blog-details.html">Luxury</a>
+                                <a href="blog-details.html">Appartment</a>
+                                <a href="blog-details.html">Restaurant</a>
+                                <a href="blog-details.html">Bar & Pub</a>
+                                <a href="blog-details.html">Deluxe Hotel</a>
+                            </p>
+                        </div>
+                        <div class="single-widgets widget_egns_social">
+                            <div class="widget-title">
+                                <h3>Social</h3>
+                            </div>
+                            <ul class="social-link d-flex align-items-center">
+                                <li><a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- ========== Blog Grid Page end============= -->
+    <!-- ========== Home1 Footer Start============= -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row g-4 justify-content-start">
+                    <div class="col-lg-4 order-lg-0 order-2">
+                        <div class="footer-items footer-about">
+                            <h4>About Hotelina</h4>
+                            <p>Hotel ut nisl quam nestibulum ac quamtoloka nec odio elementum oneni sceisuen thensopol aucan ligula. Orci varius natoque.</p>
+                            <div class="footer-btn">
+                                <a class="popup-youtube" href="https://goo.gl/maps/QkfwNHnSian4PfAt5">Our SiteMap <i class="bi bi-chevron-right"></i></a>
+                                <a href="#">Legal Notice</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-items social-area">
+                            <span class="dot1"></span>
+                            <span class="dot2"></span>
+                            <div class="footer-logo text-center">
+                                <img src="assets/images/footer-logo1.svg" alt="">
+                                <p>Hotelina Lifestyle</p>
+                                <span></span>
+                            </div>
+                            <div class="footer-social">
+                                <ul class="social-link d-flex align-items-center justify-content-center">
+                                    <li><a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a></li>
+                                    <li><a href="https://www.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 d-flex justify-content-sm-end justify-content-center">
+                        <div class="footer-items contact ">
+                            <h4>Contacts</h4>
+                            <div class="hotline mb-30">
+                                <div class="hotline-icon">
+                                   <img src="assets/images/icons/f-phone.svg" alt="">
+                                </div>
+                                <div class="hotline-info">
+                                    <h6 class="mb-10"><a href="tel:+8801701111000">+880 170 1111 000</a></h6>
+                                    <h6><a href="tel:+8801701111000">+880 170 1111 000</a></h6>
+                                </div>
+                            </div>
+                            <div class="email mb-30">
+                                <div class="email-icon">
+                                    <img src="assets/images/icons/f-envlop.svg" alt="">
+                                </div>
+                                <div class="email-info">
+                                    <h6 class="mb-10"><a href="mailto:info@example.com">info@example.com</a></h6>
+                                    <h6><a href="mailto:info@support.com">info@support.com</a></h6>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <div class="email-icon">
+                                    <img src="assets/images/icons/f-location.svg" alt="">
+                                </div>
+                                <div class="email-info">
+                                    <h6 class="mb-10"><a>168/170, Avenue 01, Mirpur</a></h6>
+                                    <h6><a>DOHS, Bangladesh</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mdl">
+                <div class="quick-menu">
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="room-suits1.html">Room & Suits</a></li>
+                        <li><a href="hotel-facilities.html">Hotel Facilites</a></li>
+                        <li><a href="blog-standard.html">Blog Standard</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-xl-6">
+                            <div class="devlopar-area">
+                                <p>Copyright 2022 <a href="#">Hotelina</a> | Design By <a href="https://www.egenslab.com/">Egens Lab</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 d-flex justify-content-xl-end justify-content-center">
+                            <div class="payment-mathort">
+                                <ul>
+                                    <li>Pay with us:</li>
+                                    <li><a href="#"><img src="assets/images/bg/visa.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/images/bg/mastercard.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/images/bg/amagonpay.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/images/bg/paypal.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== Home1 Footer End============= -->
+
+
+
+
+
+ 
+ 
+    <!-- js file link -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
